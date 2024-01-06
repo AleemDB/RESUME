@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 2;
+            padding: 2;
+            background-color:  #51e2f5;
+            color: #333333;
+        }
+
+        header {
+            background-color: blue ;
+            color: #fff;
+            margin: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color:#333333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: lime;
+           text-decoration:dashed;
+            margin: 0 15px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color:lightyellow;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            display:block;
+            margin:  auto;
+            background-color: cyan;
+            border-radius: 50%; /* Creates a circular shape for the photo */
+            width:200px;
+            height:200px;
+            object-fit: cover; /* Ensures the photo maintains its aspect ratio */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: left;
+        }
+        tr:hover {
+            background-color: #df98f1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+         <h1>ABDUL ALEEM  D  BAGAWAN</h1>
+         <P>WEB DEVELOPER</P>
+    </header>
+    <img src="file:///C:/Users/DELL/OneDrive/Documents/pic.jpg" alt="Your Image Description" >
+     
+    <!-- Your existing HTML content -->
+    <nav>
+        <a href="#personal-info">Personal Info</a>
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#references">References</a>
+    </nav>
+
+    <section id="personal-info">
+        <h2>Personal Info</h2>
+        <p>NAME: ABDUL ALEEM D BAGAWAN</p>
+        <a href="mailto:baleem1823@gmail.com">baleem1823@gmail.com</a>
+        <p>phone "8951271823"</p> 
+        
+        
+    </section>
+
+    <section id="summary">
+        <h2>Summary</h2>
+        Editing & Design with designing team in the company to build perfect web designs.
+Experienced web page designer with extensive programming.
+Proficient in HTML, CSS, Bootstrap, Dreamweaver, Responsive Design and Media Query.
+
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>QUALIFICATION</th>
+                <th>YEAR</th>
+                <th>UNIVERSITY</th>
+                
+            </tr>
+            <tr>
+                <td>Btech in computer science and engineering</td>
+                <td>Year 2018 - Year 2022</td>
+                <td>R V UNIVERSITY</td>
+            </tr>
+            <tr>
+                <td>BSC in web designing</td>
+                <td>Year 2022 - Year 2023</td>
+                <td>R V UNIVERSITY</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+       <p> Web Designer 
+        Trendsetterz IT Services Pvt.Ltd</P>
+         Responsibilities:
+        <P> * checking for errors and de-bugging websites.</P>
+        <P> *client interaction about the project.</P>
+        <P> *making the website responsivep</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+       <p> HTML</p>
+        <p>CSS</p>
+        <P>JavaScript</P>
+       <P> Visual design</p>
+
+    </section>
+
+    <section id="projects">
+        <h2>projects</h2>
+        <p>Created corporate web sites, portals and large-scale web applications.</p>
+           <p> Developed and designed new web interfaces, layouts and site graphics. </p>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <p>Available upon request</p>
+    </section>
+
+    <hr>
+
+    <footer>
+        &copy; 2024 Your Name
+    </footer>
+
+    <script>   
+        document.addEventListener('DOMContentLoaded', function() {
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+              });
+           });
+       });
+    });
+
+            function toggleContactInfo() {
+            const personalInfoSection = document.getElementById('personal-info');
+            personalInfoSection.classList.toggle('hidden');
+        }
+        // Example: Toggle header background color on click
+        const header = document.getElementById('header');
+        let isGreenBackground = true;
+
+        header.addEventListener('click', function() {
+            // Toggle between green and blue background colors
+            header.style.backgroundColor = isGreenBackground ? 'blue' : 'green';
+            isGreenBackground = !isGreenBackground;
+        });
+
+    </script>
+</body>
+</html>
